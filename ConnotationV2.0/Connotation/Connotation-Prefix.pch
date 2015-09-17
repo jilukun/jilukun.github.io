@@ -1,0 +1,26 @@
+//
+//  Connotation-Prefix.pch
+//  Connotation
+//
+//  Created by LZXuan on 15-5-25.
+//  Copyright (c) 2015年 轩哥. All rights reserved.
+//
+
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+//预编译头文件  可以对宏定义和头文件预编译 那么在其他文件就不用再到相同的文件和宏定义
+    #import "Define.h"
+#endif
+
+
+
+

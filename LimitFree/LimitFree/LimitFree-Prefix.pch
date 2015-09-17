@@ -1,0 +1,28 @@
+//
+//  LimitFree-Prefix.pch
+//  LimitFree
+//
+//  Created by LZXuan on 15-6-25.
+//  Copyright (c) 2015年 轩哥. All rights reserved.
+//
+
+#ifndef LimitFree_LimitFree_Prefix_pch
+#define LimitFree_LimitFree_Prefix_pch
+
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    //放在预编译文件 这样其他文件就不用导入了
+    #import "Define.h"
+
+#endif
+
+
+#endif
